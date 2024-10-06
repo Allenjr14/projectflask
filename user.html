@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title%}User page{% endblock%}
+{% block content%}
+{% with message = get_flashed_messages() %}
+{% if message %}
+{%for msg in message%}
+    <p>{{msg}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<p>what type of role your looking for?:</p>
+
+  
+<a class="btn btn-primary" href="sod" role="button">software engineer</a>
+<a class="btn btn-primary" href="ds" role="button">data scientist</a>
+   
+<a class="btn btn-primary" href="fd" role="button">frontend developer</a>
+<a class="btn btn-primary" href="bd" role="button">backend developer</a>
+    
+<a class="btn btn-primary" href="ml" role="button">machine learning engineer</a>
+<a class="btn btn-primary" href="de" role="button">devopls</a>
+<a class="btn btn-primary" href="fsd" role="button">full stack developer</a>
+
+
+ 
+
+
+{% endblock%}
